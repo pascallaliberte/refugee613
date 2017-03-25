@@ -8,5 +8,7 @@
 
 ## Structure
 
-  trellis/ <= run `vagrant up` in here
-  site/ <= Wordpress installs in here, plugins installed via composer
+```
+    trellis/ <= run `vagrant up` in here
+    site/ <= Wordpress installs in here, plugins installed via composer
+```
