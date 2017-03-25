@@ -1,4 +1,4 @@
-# Wordpress site based on the Roots approach
+# Wordpress site based on the [Roots](http://roots.io) approach
 
 ## Install these first
 
