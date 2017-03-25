@@ -3,7 +3,7 @@
 # Define accompanying passwords/secrets in group_vars/development/vault.yml
 
 wordpress_sites:
-  refugee613.dev:
+  refugee613.ca:
     site_hosts:
       - canonical: refugee613.dev
         redirects:
