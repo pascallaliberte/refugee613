@@ -2,7 +2,7 @@
 # List each machine only once per [group], even if it will host multiple sites.
 
 [production]
-159.203.13.5
+refugee613.rhok.ca
 
 [web]
-159.203.13.5
+refugee613.rhok.ca
