@@ -9,8 +9,8 @@ const Travel = {
             destinations.forEach((destination, i) => {
                 const travel = data.rows[0].elements[i];
                 destination.travel = {
-                    distance: travel.distance.text,
-                    duration: travel.duration.text
+                    distance: travel.distance,
+                    duration: travel.duration
                 };
             });
             success();
@@ -50,8 +50,8 @@ const Travel = {
         destinations.forEach((destination, i) => {
             const travel = distanceResult.rows[0].elements[i];
             destination.travel = {
-                distance: travel.distance.text,
-                duration: travel.duration.text
+                distance: travel.distance,
+                duration: travel.duration
             };
         });
     };

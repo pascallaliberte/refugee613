@@ -6,9 +6,8 @@ Location = {
 
     const loadLocations = () => {
         $.getJSON("/data/locations.json", (data) => {
-            clearLocations();
             Locations = data;
-            updateLocations(true);
+            updateLocations();
         });
     }
 
@@ -17,17 +16,22 @@ Location = {
         $("#locations").removeClass("section").empty();
     };
 
-    const updateLocations = (create = false) => {
-        Locations.forEach((location) => {
-            if (create) {
-                $("#locations").addClass("section");
-                $("<div>", {class: "item location", id: location.id, address: location.address}).appendTo("#locations");
+    const updateLocations = () => {
+        $("#locations").removeClass("section").empty();
+        Locations.sort((a,b) => {
+            if (a.travel && b.travel) {
+                return a.travel.duration.value - b.travel.duration.value;
             }
+            return a.name.localeCompare(b.name);
+        });
+        Locations.forEach((location) => {
+            $("#locations").addClass("section");
+            const locationElement = $("<div>", {class: "item location", id: location.id, address: location.address}).appendTo("#locations");
             let text = location.name;
             if (location.travel) {
-                text += ": " + location.travel.duration + " " + location.travel.distance;
+                text += ": " + location.travel.duration.text + " " + location.travel.distance.text;
             }
-            $("#"+location.id).text(text);
+            locationElement.text(text);
         });
     };
 
