@@ -1,17 +1,57 @@
 [
     {
-        "id": "landsdowne",
-        "name": "Landsdowne",
-        "address": "450 Queen Elizabeth Dr, Ottawa, ON K1S 5J3"
+        "id": "newcomer-health-centre",
+        "name": "Ottawa Newcomer Health Centre",
+        "address": "219 Argyle Avenue, Ottawa"
     },
     {
-        "id": "parliament",
-        "name": "Parliament",
-        "address": "Wellington St, Ottawa, ON K1A 0A4"
+        "id": "health-help",
+        "name": "Housing Help",
+        "address": "309 Cooper St, Suite 502, Ottawa"
     },
     {
-        "id": "south_keys",
-        "name": "South Keys",
-        "address": "2210 Bank St, Ottawa, ON K1V 0T7"
+        "id": "action-housing",
+        "name": "Action Housing",
+        "address": "261 Montreal Road, Ottawa"
+    },
+    {
+        "id": "matthew-house-furniture-bank",
+        "name": "Matthew House Furniture Bank",
+        "address": "340 Legget Drive, Ottawa"
+    },
+    {
+        "id": "cultural-interpretation-services-for-out-communities",
+        "name": "Cultural Interpretation Services for Our Communities",
+        "address": "44 Eccles Street, Suite 100"
+    },
+    {
+        "id": "immigrant-women-services-ottawa",
+        "name": "Immigrant Women Services Ottawa",
+        "address": "219 Argyle Avenue, Suite 400, Ottawa"
+    },
+    {
+        "id": "ottawa-language-access",
+        "name": "Ottawa Language Access",
+        "address": "219 Argyle Avenue, Ottawa"
+    },
+    {
+        "id": "ymca-language-instruction-for-newcomers-to-canada",
+        "name": "YMCA-YWCA Language Instruction for Newcomers to Canada",
+        "address": "240 Catherine Street, Suite 308, Ottawa"
+    },
+    {
+        "id": "algonquin-college-language-instruction-for-newcomers-to-canada",
+        "name": "Algonquin College Language Instruction for Newcomers to Canada",
+        "address": "1385 Woodroffe Avenue"
+    },
+    {
+        "id": "ottawa-carleton-district-school-board",
+        "name": "Ottawa-Carleton District School Board",
+        "address": "440 Albert Street, Room E122, Ottawa"
+    },
+    {
+        "id": "la-cite-college",
+        "name": "La Cite College",
+        "address": "801 Avation Parkway, Ottawa"
     }
 ]
