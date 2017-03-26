@@ -4,10 +4,11 @@ Location = {
 (()=>{
     let Locations = [];
 
-    const loadLocations = () => {
+    const loadLocations = (callback) => {
         $.getJSON("/data/locations.json", (data) => {
             Locations = data;
             updateLocations();
+            callback();
         });
     }
 
@@ -37,7 +38,7 @@ Location = {
 
     const calculateTravel = () => {
         if (!Locations || Locations.length == 0) {
-            alert("You must load locations before you can calculate.");
+            console.log("You must load locations before you can calculate.");
             return;
         }
         const currentAddress = $("#current_address").val();
