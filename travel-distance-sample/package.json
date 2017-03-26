@@ -1,0 +1,14 @@
+{
+    "name": "distance-calc",
+    "version": "0.0.1",
+    "scripts": {
+        "start": "npm run lite",    
+        "lite": "lite-server"
+    },
+    "dependencies": {
+        "jquery": "3.2.1"
+    },
+    "devDependencies": {
+        "lite-server": "2.3.0"
+    }
+}
