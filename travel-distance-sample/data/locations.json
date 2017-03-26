@@ -1,0 +1,17 @@
+[
+    {
+        "id": "landsdowne",
+        "name": "Landsdowne",
+        "address": "450 Queen Elizabeth Dr, Ottawa, ON K1S 5J3"
+    },
+    {
+        "id": "parliament",
+        "name": "Parliament",
+        "address": "Wellington St, Ottawa, ON K1A 0A4"
+    },
+    {
+        "id": "south_keys",
+        "name": "South Keys",
+        "address": "2210 Bank St, Ottawa, ON K1V 0T7"
+    }
+]

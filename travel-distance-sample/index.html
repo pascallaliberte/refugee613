@@ -1,0 +1,31 @@
+<html>
+    <head Access-Control-Allow-Origin:*>
+        <title>How far am I?</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <body>
+        <div class="section" id="input">
+            <div>
+                <span class="item">Where are you?</span>
+                <input class="item" id="current_address" value="335 Maclaren Street"/>
+            </div>
+            <div>
+                <span class="item">How are you travelling?</span>
+                <input type="radio" name="transport" value="walking" checked>Walking</input>
+                <input type="radio" name="transport" value="bus">Bus</input>
+                <input type="radio" name="transport" value="car">Car</input>
+            </div>
+            <button class="item" onClick="Location.calculate()">Calculate travel</button>
+        </div>
+        <div id="locations">
+        </div>
+        <div class="section" id="data-actions">
+            <button class="item" onClick="Location.load()">Load Locations</button>
+            <button class="item" onClick="Location.clear()">Clear Locations</button>
+        </div>
+        <script src="/lib/jquery.min.js"></script>
+        <script src="/js/travel.js"></script>
+        <script src="/js/location.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js" async defer></script>
+    </body>
+</html>

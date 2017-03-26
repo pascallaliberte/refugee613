@@ -1,0 +1,49 @@
+{
+    "rows": [
+        {
+            "elements": [
+                {
+                    "distance": {
+                        "text": "3.8 km",
+                        "value": 3817
+                    },
+                    "duration": {
+                        "text": "9 mins",
+                        "value": 521
+                    },
+                    "status": "OK"
+                },
+                {
+                    "distance": {
+                        "text": "1.0 km",
+                        "value": 1038
+                    },
+                    "duration": {
+                        "text": "6 mins",
+                        "value": 331
+                    },
+                    "status": "OK"
+                },
+                {
+                    "distance": {
+                        "text": "7.1 km",
+                        "value": 7097
+                    },
+                    "duration": {
+                        "text": "20 mins",
+                        "value": 1174
+                    },
+                    "status": "OK"
+                }
+            ]
+        }
+    ],
+    "originAddresses": [
+        "335 MacLaren St, Ottawa, ON K2P 0M5, Canada"
+    ],
+    "destinationAddresses": [
+        "450 Queen Elizabeth Dr, Ottawa, ON K1S 5J3, Canada",
+        "Wellington St, Ottawa, ON K1A, Canada",
+        "2210 Bank St, Ottawa, ON K1V 1J5, Canada"
+    ]
+}
