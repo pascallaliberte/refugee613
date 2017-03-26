@@ -15,11 +15,11 @@
                 <input type="radio" name="transport" value="bus">Bus</input>
                 <input type="radio" name="transport" value="car">Car</input>
             </div>
-            <button id="calculateButton" class="item" onClick="Location.calculate()" disabled="true">Calculate travel</button>
+            <button id="calculateButton" class="item" onClick="Location.calculate()" disabled="true" style="display: none">Calculate travel</button>
         </div>
         <div id="locations">
         </div>
-        <div class="section" id="data-actions" style="display:none">
+        <div class="section" id="data-actions" style="display: none">
             <button class="item" onClick="Location.load()">Load Locations</button>
             <button class="item" onClick="Location.clear()">Clear Locations</button>
         </div>
@@ -28,13 +28,16 @@
         <script src="/js/location.js"></script>
         <script>
             $(document).ready(()=> {
-                Location.load();
+                console.log("Document ready");
+                Location.load(Location.calculate);
+                $("input[type=radio][name=transport]").change(() => {
+                    Location.calculate();
+                });
             });
         </script>
         <script>
             const googleReady = () => {
                 console.log("Google ready");
-                $("#calculateButton").prop("disabled", false);
             };
         </script>
         <script src="https://maps.googleapis.com/maps/api/js" async defer onload="googleReady()"></script>
