@@ -5,15 +5,15 @@
 wordpress_sites:
   refugee613.ca:
     site_hosts:
-      - canonical: refugee613.dev
-        redirects:
-          - www.refugee613.dev
+      - canonical: refugee613.rhok.ca
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
-    admin_email: admin@refugee613.dev
+    repo: git@github.com:pascallaliberte/refugee613.git # replace with your Git repo URL
+    repo_subtree_path: site # relative path to your Bedrock/WP directory in your repo
+    branch: master
     multisite:
       enabled: false
     ssl:
       enabled: false
-      provider: self-signed
+      provider: letsencrypt
     cache:
       enabled: false
