@@ -2,7 +2,7 @@
 # List each machine only once per [group], even if it will host multiple sites.
 
 [production]
-refugee613.rhok.ca
+your_server_hostname
 
 [web]
-refugee613.rhok.ca
+your_server_hostname
