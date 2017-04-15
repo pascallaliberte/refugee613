@@ -8,11 +8,13 @@ users:
       - "{{ web_group }}"
     keys:
       - https://github.com/pascallaliberte.keys
+      - https://github.com/cmjaimet.keys
   - name: "{{ admin_user }}"
     groups:
       - sudo
     keys:
       - https://github.com/pascallaliberte.keys
+      - https://github.com/cmjaimet.keys
 
 web_user: web
 web_group: www-data
